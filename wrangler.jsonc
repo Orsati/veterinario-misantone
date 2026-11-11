@@ -1,0 +1,11 @@
+// Configurazione di Cloudflare per il sito: solo file statici (la radice del repo, meno .assetsignore).
+// Serve per la pagina "non trovata": senza "404-page" un indirizzo sbagliato dava una pagina bianca.
+// "name" deve essere uguale al nome del progetto Workers su Cloudflare, altrimenti la build fallisce.
+{
+    "name": "veterinariomisantone",
+    "compatibility_date": "2025-09-01",
+    "assets": {
+        "directory": ".",
+        "not_found_handling": "404-page"
+    }
+}

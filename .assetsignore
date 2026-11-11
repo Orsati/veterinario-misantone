@@ -1,0 +1,15 @@
+# File del repo che non fanno parte del sito: Cloudflare non li pubblica.
+# CLAUDE.md, AGENTS.md e DNS.md contengono note interne, nomi e account: non devono essere scaricabili.
+.DS_Store
+.assetsignore
+.gitignore
+.claude
+*.md
+# sorgenti degli stili: online va solo css/stile.css
+tailwind.config.js
+tailwind.input.css
+controlla.py
+# configurazione di Cloudflare
+wrangler.jsonc
+# foto originali: restano solo in locale
+foto-originali/
