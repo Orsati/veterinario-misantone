@@ -169,8 +169,38 @@
                     </a>
                 </div>
 
-                <div class="rounded-3xl overflow-hidden shadow-card border border-wix-teal/15 h-[380px] bg-[#E5E3DF]">
-                    <iframe title="Mappa di Ambulatorio Veterinario Misantone in Viale Giovanni Bovio 175, Teramo" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.823046010743!2d13.690361!3d42.6651033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1331e784170329fd%3A0x737061af6af9eb8!2sAmbulatorio%20Veterinario%20Misantone!5e0!3m2!1sit!2sit!4v1710000000000!5m2!1sit!2sit" class="w-full h-full border-0" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div id="mappa-box" class="relative rounded-3xl overflow-hidden shadow-card border border-wix-teal/15 h-[380px] bg-[#E5E3DF] select-none">
+                    <img id="mappa-img" src="img/contattaci/mappa.webp" alt="Mappa stradale di Ambulatorio Veterinario Misantone in Viale Giovanni Bovio 175, Teramo" width="1040" height="380" class="w-full h-full object-cover object-center transition-transform duration-200 cursor-grab active:cursor-grabbing" draggable="false">
+
+                    <!-- Scheda luogo stile Google Maps -->
+                    <div class="absolute top-3 left-3 z-10 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg border border-black/5 p-3.5 text-left max-w-[calc(100%-24px)] sm:max-w-[290px]">
+                        <p class="font-sans font-bold text-[14px] leading-snug text-[#202124]">Ambulatorio Veterinario Misantone</p>
+                        <p class="font-sans text-[12px] leading-snug text-[#5F6368] mt-0.5">Viale Giovanni Bovio, 175, 64100 Teramo TE</p>
+                        <div class="flex items-center gap-1 mt-1.5 text-[12px] text-[#5F6368]">
+                            <span class="font-semibold text-[#202124]">4,7</span>
+                            <span class="text-[#FABB05] tracking-tight" aria-hidden="true">★★★★★</span>
+                            <span>(132)</span>
+                        </div>
+                        <div class="mt-2.5 flex items-center gap-2">
+                            <a href="https://www.google.com/maps/search/?api=1&amp;query=Ambulatorio+Veterinario+Misantone+Viale+Giovanni+Bovio+175+Teramo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#1A73E8] hover:bg-[#1557B0] text-white font-sans font-medium text-[12px] shadow-sm transition-colors">
+                                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 3h7v7m0-7L10 14M5 5h5M5 5v14h14v-5"/>
+                                </svg>
+                                <span>Apri in Maps</span>
+                            </a>
+                            <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Ambulatorio+Veterinario+Misantone+Viale+Giovanni+Bovio+175+Teramo" target="_blank" rel="noopener noreferrer" aria-label="Indicazioni stradali su Google Maps" title="Indicazioni stradali" class="w-8 h-8 rounded-full bg-[#E8F0FE] hover:bg-[#D2E3FC] text-[#1A73E8] inline-flex items-center justify-center transition-colors">
+                                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="M21.71 11.29l-9-9a.996.996 0 00-1.41 0l-9 9a.996.996 0 000 1.41l9 9c.39.39 1.02.39 1.41 0l9-9a.996.996 0 000-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Controlli zoom -->
+                    <div class="absolute bottom-3 right-3 z-10 flex flex-col bg-white/95 backdrop-blur-sm rounded-xl shadow-lg border border-black/5 overflow-hidden">
+                        <button type="button" id="mappa-zoom-in" aria-label="Ingrandisci mappa" title="Ingrandisci" class="w-9 h-9 flex items-center justify-center text-[#5F6368] hover:text-[#202124] hover:bg-black/5 text-xl font-medium border-b border-black/10 transition-colors">+</button>
+                        <button type="button" id="mappa-zoom-out" aria-label="Rimpicciolisci mappa" title="Rimpicciolisci" class="w-9 h-9 flex items-center justify-center text-[#5F6368] hover:text-[#202124] hover:bg-black/5 text-xl font-medium transition-colors">−</button>
+                    </div>
                 </div>
             </div>
         </section>

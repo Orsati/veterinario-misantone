@@ -78,6 +78,54 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Mappa interattiva in Contattaci (zoom +/- e trascinamento)
+    const mappaBox = document.getElementById('mappa-box');
+    const mappaImg = document.getElementById('mappa-img');
+    const zoomInBtn = document.getElementById('mappa-zoom-in');
+    const zoomOutBtn = document.getElementById('mappa-zoom-out');
+    if (mappaBox && mappaImg) {
+        let scala = 1, tx = 0, ty = 0, trascina = false, startX = 0, startY = 0;
+        const limita = () => {
+            const maxX = (mappaBox.clientWidth * (scala - 1)) / 2;
+            const maxY = (mappaBox.clientHeight * (scala - 1)) / 2;
+            tx = Math.max(-maxX, Math.min(maxX, tx));
+            ty = Math.max(-maxY, Math.min(maxY, ty));
+            mappaImg.style.transform = `translate(${tx}px, ${ty}px) scale(${scala})`;
+        };
+        const cambiaZoom = delta => {
+            scala = Math.max(1, Math.min(2.4, +(scala + delta).toFixed(2)));
+            if (scala === 1) { tx = 0; ty = 0; }
+            limita();
+        };
+        if (zoomInBtn) zoomInBtn.addEventListener('click', () => cambiaZoom(0.35));
+        if (zoomOutBtn) zoomOutBtn.addEventListener('click', () => cambiaZoom(-0.35));
+        mappaBox.addEventListener('dblclick', e => {
+            if (e.target.closest('a, button')) return;
+            cambiaZoom(scala < 2 ? 0.45 : -2);
+        });
+        mappaImg.addEventListener('pointerdown', e => {
+            if (scala <= 1) cambiaZoom(0.35);
+            trascina = true;
+            startX = e.clientX - tx;
+            startY = e.clientY - ty;
+            mappaImg.style.transition = 'none';
+            mappaImg.setPointerCapture(e.pointerId);
+        });
+        mappaImg.addEventListener('pointermove', e => {
+            if (!trascina) return;
+            tx = e.clientX - startX;
+            ty = e.clientY - startY;
+            limita();
+        });
+        const fineTrascina = () => {
+            if (!trascina) return;
+            trascina = false;
+            mappaImg.style.transition = '';
+        };
+        mappaImg.addEventListener('pointerup', fineTrascina);
+        mappaImg.addEventListener('pointercancel', fineTrascina);
+    }
+
     // Menu mobile (<dialog id="mobile-menu">)
     const mobileMenu = document.getElementById('mobile-menu');
     const menuOpen = document.getElementById('menu-open');
