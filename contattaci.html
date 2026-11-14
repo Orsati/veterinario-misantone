@@ -21,16 +21,15 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
     <meta name="theme-color" content="#4D8495">
+    <link rel="stylesheet" href="css/stile.css">
     <link rel="preload" href="fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/poppins-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/poppins-bold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="css/stile.css">
 </head>
 <body class="bg-white text-wix-dark font-sans antialiased selection:bg-wix-teal selection:text-white">
     <a href="#contenuto" class="skip-link">Salta al contenuto</a>
 
-    <header class="bg-white/95 backdrop-blur-md sticky top-0 z-40 border-b border-wix-teal/10">
+    <header class="bg-white/95 backdrop-blur-sm sticky top-0 z-40 border-b border-wix-teal/10">
         <div class="max-w-[1280px] mx-auto px-4 md:px-8 pt-4 pb-4 md:pt-6 md:pb-5 relative">
             <div class="flex items-center justify-between md:hidden mb-2">
                 <div class="flex items-center gap-2.5">
@@ -98,7 +97,7 @@
         <!-- Foto Hero -->
         <div class="max-w-[1040px] mx-auto px-4 md:px-6 pt-6">
             <div class="rounded-3xl overflow-hidden shadow-card border border-wix-teal/15 bg-wix-sage">
-                <img src="img/contattaci/hero.webp" alt="Dott. Pasquale Misantone al telefono nello studio veterinario" width="980" height="416" class="w-full h-auto block object-cover">
+                <img src="img/contattaci/hero.webp" alt="Dott. Pasquale Misantone al telefono nello studio veterinario" width="980" height="416" fetchpriority="high" class="w-full h-auto block object-cover">
             </div>
         </div>
 
@@ -203,7 +202,7 @@
                     </div>
 
                     <div class="relative h-[260px] sm:h-[380px] overflow-hidden">
-                        <img id="mappa-img" src="img/contattaci/mappa.webp" alt="Mappa stradale di Ambulatorio Veterinario Misantone in Viale Giovanni Bovio 175, Teramo" width="1040" height="380" class="w-full h-full object-cover object-center transition-transform duration-200 cursor-grab active:cursor-grabbing" draggable="false">
+                        <img id="mappa-img" src="img/contattaci/mappa.webp" alt="Mappa stradale di Ambulatorio Veterinario Misantone in Viale Giovanni Bovio 175, Teramo" width="1040" height="380" loading="lazy" decoding="async" class="w-full h-full object-cover object-center transition-transform duration-200 cursor-grab active:cursor-grabbing" draggable="false">
 
                         <!-- Controlli zoom -->
                         <div class="absolute bottom-3 right-3 z-10 flex items-end gap-2">
@@ -242,6 +241,6 @@
         </div>
     </footer>
 
-    <script src="nav.js"></script>
+    <script src="nav.js" defer></script>
 </body>
 </html>

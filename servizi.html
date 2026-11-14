@@ -21,11 +21,10 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
     <meta name="theme-color" content="#4D8495">
+    <link rel="stylesheet" href="css/stile.css">
     <link rel="preload" href="fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/poppins-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/poppins-bold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="css/stile.css">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -78,7 +77,7 @@
 <body class="bg-white text-wix-dark font-sans antialiased selection:bg-wix-teal selection:text-white">
     <a href="#contenuto" class="skip-link">Salta al contenuto</a>
 
-    <header class="bg-white/95 backdrop-blur-md sticky top-0 z-40 border-b border-wix-teal/10">
+    <header class="bg-white/95 backdrop-blur-sm sticky top-0 z-40 border-b border-wix-teal/10">
         <div class="max-w-[1280px] mx-auto px-4 md:px-8 pt-4 pb-4 md:pt-6 md:pb-5 relative">
             <div class="flex items-center justify-between md:hidden mb-2">
                 <div class="flex items-center gap-2.5">
@@ -148,16 +147,16 @@
             <section aria-label="Sale interne dell'ambulatorio" class="order-2 md:order-1 max-w-[1380px] mx-auto px-4 md:px-6 pt-5 pb-8 md:pb-0 w-full">
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
                     <div class="overflow-hidden rounded-2xl shadow-card group">
-                        <img src="img/servizi/strip-1.webp" alt="Sala radiologica dell'Ambulatorio Veterinario Misantone" width="490" height="828" class="w-full aspect-[245/414] object-cover block transition-transform duration-500 group-hover:scale-105">
+                        <img src="img/servizi/strip-1.webp" alt="Sala radiologica dell'Ambulatorio Veterinario Misantone" width="490" height="828" decoding="async" class="w-full aspect-[245/414] object-cover block transition-transform duration-500 group-hover:scale-105">
                     </div>
                     <div class="overflow-hidden rounded-2xl shadow-card group">
-                        <img src="img/servizi/strip-2.webp" alt="Postazione di diagnostica per immagini e laboratorio" width="490" height="828" class="w-full aspect-[245/414] object-cover block transition-transform duration-500 group-hover:scale-105">
+                        <img src="img/servizi/strip-2.webp" alt="Postazione di diagnostica per immagini e laboratorio" width="490" height="828" decoding="async" class="w-full aspect-[245/414] object-cover block transition-transform duration-500 group-hover:scale-105">
                     </div>
                     <div class="overflow-hidden rounded-2xl shadow-card group">
-                        <img src="img/servizi/strip-3.webp" alt="Sala visite dell'Ambulatorio Veterinario Misantone" width="490" height="828" class="w-full aspect-[245/414] object-cover block transition-transform duration-500 group-hover:scale-105">
+                        <img src="img/servizi/strip-3.webp" alt="Sala visite dell'Ambulatorio Veterinario Misantone" width="490" height="828" decoding="async" class="w-full aspect-[245/414] object-cover block transition-transform duration-500 group-hover:scale-105">
                     </div>
                     <div class="overflow-hidden rounded-2xl shadow-card group">
-                        <img src="img/servizi/strip-4.webp" alt="Sala operatoria chirurgica dell'ambulatorio" width="490" height="828" class="w-full aspect-[245/414] object-cover block transition-transform duration-500 group-hover:scale-105">
+                        <img src="img/servizi/strip-4.webp" alt="Sala operatoria chirurgica dell'ambulatorio" width="490" height="828" decoding="async" class="w-full aspect-[245/414] object-cover block transition-transform duration-500 group-hover:scale-105">
                     </div>
                 </div>
             </section>
@@ -294,7 +293,7 @@
             </section>
 
             <!-- Prima della visita + FAQ -->
-            <section class="order-3 w-full bg-wix-sage py-12 md:py-16 px-4 md:px-6 border-t border-wix-teal/10">
+            <section class="defer-render order-3 w-full bg-wix-sage py-12 md:py-16 px-4 md:px-6 border-t border-wix-teal/10">
                 <div class="max-w-[920px] mx-auto">
                     <div class="text-center mb-8">
                         <span class="text-[11px] font-semibold uppercase tracking-[0.14em] text-wix-teal/80">Informazioni pratiche</span>
@@ -381,6 +380,6 @@
         </div>
     </footer>
 
-    <script src="nav.js"></script>
+    <script src="nav.js" defer></script>
 </body>
 </html>

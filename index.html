@@ -21,11 +21,10 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
     <meta name="theme-color" content="#4D8495">
+    <link rel="stylesheet" href="css/stile.css">
     <link rel="preload" href="fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/poppins-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/poppins-bold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="css/stile.css">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -84,7 +83,7 @@
 <body class="bg-white text-wix-dark font-sans antialiased selection:bg-wix-teal selection:text-white">
     <a href="#contenuto" class="skip-link">Salta al contenuto</a>
 
-    <header class="bg-white/95 backdrop-blur-md sticky top-0 z-40 border-b border-wix-teal/10">
+    <header class="bg-white/95 backdrop-blur-sm sticky top-0 z-40 border-b border-wix-teal/10">
         <div class="max-w-[1280px] mx-auto px-4 md:px-8 pt-4 pb-4 md:pt-6 md:pb-5 relative">
             <div class="flex items-center justify-between md:hidden mb-2">
                 <div class="flex items-center gap-2.5">
@@ -153,13 +152,13 @@
         <section aria-label="Immagini dell'ambulatorio" class="max-w-[1380px] mx-auto px-4 md:px-6 pt-5">
             <div class="flex flex-col md:flex-row gap-3 md:gap-4 w-full">
                 <div class="hidden md:block md:w-[25.92%] overflow-hidden rounded-2xl border border-wix-teal/10 shadow-card group">
-                    <img src="img/home/strip-1.webp" alt="Insegna esterna dell'Ambulatorio Veterinario Misantone" width="508" height="500" class="w-full h-full object-cover block transition-transform duration-700 ease-out group-hover:scale-[1.03]">
+                    <img src="img/home/strip-1.webp" alt="Insegna esterna dell'Ambulatorio Veterinario Misantone" width="508" height="500" decoding="async" class="w-full h-full object-cover block transition-transform duration-700 ease-out group-hover:scale-[1.03]">
                 </div>
                 <div class="w-full md:w-[47.04%] overflow-hidden rounded-2xl border border-wix-teal/10 shadow-card group">
                     <img src="img/home/strip-2.webp" alt="Il Dott. Gabriele Misantone e il Dott. Pasquale Misantone in ambulatorio" width="922" height="500" fetchpriority="high" class="w-full h-full object-cover block transition-transform duration-700 ease-out group-hover:scale-[1.03]">
                 </div>
                 <div class="hidden md:block md:w-[27.04%] overflow-hidden rounded-2xl border border-wix-teal/10 shadow-card group">
-                    <img src="img/home/strip-3.webp" alt="Sala d'attesa dell'Ambulatorio Veterinario Misantone" width="530" height="500" class="w-full h-full object-cover block transition-transform duration-700 ease-out group-hover:scale-[1.03]">
+                    <img src="img/home/strip-3.webp" alt="Sala d'attesa dell'Ambulatorio Veterinario Misantone" width="530" height="500" decoding="async" class="w-full h-full object-cover block transition-transform duration-700 ease-out group-hover:scale-[1.03]">
                 </div>
             </div>
         </section>
@@ -298,7 +297,7 @@
         </section>
 
         <!-- Galleria Fotografica 5x3 (15 foto nell'ordine esatto Wix, curata stile Cosmos + Lightbox) -->
-        <section aria-label="Galleria fotografica dell'ambulatorio e dei pazienti" class="w-full bg-wix-sage/60 py-12 md:py-16 px-4 md:px-6 border-t border-wix-teal/10">
+        <section aria-label="Galleria fotografica dell'ambulatorio e dei pazienti" class="defer-render w-full bg-wix-sage/60 py-12 md:py-16 px-4 md:px-6 border-t border-wix-teal/10">
             <div class="max-w-[1380px] mx-auto">
                 <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2 mb-6 md:mb-8">
                     <div>
@@ -310,63 +309,63 @@
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-3 md:gap-3.5">
                     <button type="button" data-lightbox-src="img/galleria/foto-01.webp" data-lightbox-alt="Gatto in degenza nell'ambulatorio veterinario" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
-                        <img src="img/galleria/foto-01.webp" alt="Gatto in degenza nell'ambulatorio veterinario" width="960" height="722" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <img src="img/galleria/foto-01.webp" alt="Gatto in degenza nell'ambulatorio veterinario" width="960" height="722" loading="lazy" decoding="async" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
                         <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">01</span>
                     </button>
                     <button type="button" data-lightbox-src="img/galleria/foto-02.webp" data-lightbox-alt="Lo staff medico dell'Ambulatorio Veterinario Misantone" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
-                        <img src="img/galleria/foto-02.webp" alt="Lo staff medico dell'Ambulatorio Veterinario Misantone" width="960" height="722" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <img src="img/galleria/foto-02.webp" alt="Lo staff medico dell'Ambulatorio Veterinario Misantone" width="960" height="722" loading="lazy" decoding="async" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
                         <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">02</span>
                     </button>
                     <button type="button" data-lightbox-src="img/galleria/foto-03.webp" data-lightbox-alt="Coniglio bianco e nero in visita veterinaria" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
-                        <img src="img/galleria/foto-03.webp" alt="Coniglio bianco e nero in visita veterinaria" width="960" height="722" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <img src="img/galleria/foto-03.webp" alt="Coniglio bianco e nero in visita veterinaria" width="960" height="722" loading="lazy" decoding="async" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
                         <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">03</span>
                     </button>
                     <button type="button" data-lightbox-src="img/galleria/foto-04.webp" data-lightbox-alt="Veterinario con un cucciolo di cane" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
-                        <img src="img/galleria/foto-04.webp" alt="Veterinario con un cucciolo di cane" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <img src="img/galleria/foto-04.webp" alt="Veterinario con un cucciolo di cane" width="960" height="722" loading="lazy" decoding="async" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
                         <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">04</span>
                     </button>
                     <button type="button" data-lightbox-src="img/galleria/foto-05.webp" data-lightbox-alt="Attestati di formazione e aggiornamento professionale" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
-                        <img src="img/galleria/foto-05.webp" alt="Attestati di formazione e aggiornamento professionale" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <img src="img/galleria/foto-05.webp" alt="Attestati di formazione e aggiornamento professionale" width="960" height="722" loading="lazy" decoding="async" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
                         <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">05</span>
                     </button>
                     <button type="button" data-lightbox-src="img/galleria/foto-06.webp" data-lightbox-alt="Cane sul tavolo da visita" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
-                        <img src="img/galleria/foto-06.webp" alt="Cane sul tavolo da visita" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <img src="img/galleria/foto-06.webp" alt="Cane sul tavolo da visita" width="960" height="722" loading="lazy" decoding="async" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
                         <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">06</span>
                     </button>
                     <button type="button" data-lightbox-src="img/galleria/foto-07.webp" data-lightbox-alt="Intervento in sala operatoria veterinaria" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
-                        <img src="img/galleria/foto-07.webp" alt="Intervento in sala operatoria veterinaria" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <img src="img/galleria/foto-07.webp" alt="Intervento in sala operatoria veterinaria" width="960" height="722" loading="lazy" decoding="async" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
                         <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">07</span>
                     </button>
                     <button type="button" data-lightbox-src="img/galleria/foto-08.webp" data-lightbox-alt="Postazione per le analisi di laboratorio" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
-                        <img src="img/galleria/foto-08.webp" alt="Postazione per le analisi di laboratorio" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <img src="img/galleria/foto-08.webp" alt="Postazione per le analisi di laboratorio" width="960" height="722" loading="lazy" decoding="async" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
                         <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">08</span>
                     </button>
                     <button type="button" data-lightbox-src="img/galleria/foto-09.webp" data-lightbox-alt="Piccolo cucciolo di cane visitato in clinica" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
-                        <img src="img/galleria/foto-09.webp" alt="Piccolo cucciolo di cane visitato in clinica" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <img src="img/galleria/foto-09.webp" alt="Piccolo cucciolo di cane visitato in clinica" width="960" height="722" loading="lazy" decoding="async" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
                         <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">09</span>
                     </button>
                     <button type="button" data-lightbox-src="img/galleria/foto-10.webp" data-lightbox-alt="Gattino con fasciatura post-operatoria" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
-                        <img src="img/galleria/foto-10.webp" alt="Gattino con fasciatura post-operatoria" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <img src="img/galleria/foto-10.webp" alt="Gattino con fasciatura post-operatoria" width="960" height="722" loading="lazy" decoding="async" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
                         <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">10</span>
                     </button>
                     <button type="button" data-lightbox-src="img/galleria/foto-11.webp" data-lightbox-alt="I medici veterinari dell'ambulatorio" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
-                        <img src="img/galleria/foto-11.webp" alt="I medici veterinari dell'ambulatorio" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <img src="img/galleria/foto-11.webp" alt="I medici veterinari dell'ambulatorio" width="960" height="722" loading="lazy" decoding="async" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
                         <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">11</span>
                     </button>
                     <button type="button" data-lightbox-src="img/galleria/foto-12.webp" data-lightbox-alt="Strumentazione per diagnostica ed esami ematochimici" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
-                        <img src="img/galleria/foto-12.webp" alt="Strumentazione per diagnostica ed esami ematochimici" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <img src="img/galleria/foto-12.webp" alt="Strumentazione per diagnostica ed esami ematochimici" width="960" height="722" loading="lazy" decoding="async" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
                         <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">12</span>
                     </button>
                     <button type="button" data-lightbox-src="img/galleria/foto-13.webp" data-lightbox-alt="Refertazione radiografica digitale al computer" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
-                        <img src="img/galleria/foto-13.webp" alt="Refertazione radiografica digitale al computer" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <img src="img/galleria/foto-13.webp" alt="Refertazione radiografica digitale al computer" width="960" height="722" loading="lazy" decoding="async" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
                         <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">13</span>
                     </button>
                     <button type="button" data-lightbox-src="img/galleria/foto-14.webp" data-lightbox-alt="Gatto rosso e bianco durante una visita di controllo" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
-                        <img src="img/galleria/foto-14.webp" alt="Gatto rosso e bianco durante una visita di controllo" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <img src="img/galleria/foto-14.webp" alt="Gatto rosso e bianco durante una visita di controllo" width="960" height="722" loading="lazy" decoding="async" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
                         <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">14</span>
                     </button>
                     <button type="button" data-lightbox-src="img/galleria/foto-15.webp" data-lightbox-alt="Chirurgia veterinaria di precisione in sala operatoria" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
-                        <img src="img/galleria/foto-15.webp" alt="Chirurgia veterinaria di precisione in sala operatoria" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <img src="img/galleria/foto-15.webp" alt="Chirurgia veterinaria di precisione in sala operatoria" width="960" height="722" loading="lazy" decoding="async" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
                         <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">15</span>
                     </button>
                 </div>
@@ -374,7 +373,7 @@
         </section>
 
         <!-- Mascotte interattiva: Barboncino Bianco da accarezzare -->
-        <section id="barboncino-section" aria-label="Mascotte interattiva della clinica" class="w-full bg-white py-12 md:py-16 px-4 md:px-6 border-t border-wix-teal/10">
+        <section id="barboncino-section" aria-label="Mascotte interattiva della clinica" class="defer-render w-full bg-white py-12 md:py-16 px-4 md:px-6 border-t border-wix-teal/10">
             <div class="max-w-[780px] mx-auto bg-wix-sage/55 rounded-3xl border border-wix-teal/15 shadow-card p-6 md:p-10 text-center">
                 <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-wix-teal/15 text-wix-teal text-[10px] font-semibold uppercase tracking-[0.14em]">
                     Sala d’attesa virtuale · Mascotte
@@ -532,6 +531,6 @@
         </div>
     </footer>
 
-    <script src="nav.js"></script>
+    <script src="nav.js" defer></script>
 </body>
 </html>

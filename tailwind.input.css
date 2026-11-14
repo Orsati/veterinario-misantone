@@ -104,6 +104,9 @@ html:has(dialog[open]) { overflow: hidden; }
 .corpo-respiro { transform-origin: 140px 158px; animation: respiro-dolce 3.4s ease-in-out infinite; }
 .particella-cuore { position: absolute; pointer-events: none; animation: cuore-vola .95s cubic-bezier(.2, .8, .2, 1) forwards; }
 
+/* Ottimizzazione rendering sezioni sotto la piega */
+.defer-render { content-visibility: auto; contain-intrinsic-size: 1px 520px; }
+
 /* Fisarmonica FAQ nativa */
 details.faq-item > summary { list-style: none; }
 details.faq-item > summary::-webkit-details-marker { display: none; }

@@ -21,16 +21,15 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
     <meta name="theme-color" content="#4D8495">
+    <link rel="stylesheet" href="css/stile.css">
     <link rel="preload" href="fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/poppins-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/poppins-bold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="css/stile.css">
 </head>
 <body class="bg-white text-wix-dark font-sans antialiased selection:bg-wix-teal selection:text-white">
     <a href="#contenuto" class="skip-link">Salta al contenuto</a>
 
-    <header class="bg-white/95 backdrop-blur-md sticky top-0 z-40 border-b border-wix-teal/10">
+    <header class="bg-white/95 backdrop-blur-sm sticky top-0 z-40 border-b border-wix-teal/10">
         <div class="max-w-[1280px] mx-auto px-4 md:px-8 pt-4 pb-4 md:pt-6 md:pb-5 relative">
             <div class="flex items-center justify-between md:hidden mb-2">
                 <div class="flex items-center gap-2.5">
@@ -98,7 +97,7 @@
         <!-- Hero superiore con cornice arrotondata 2026 -->
         <div class="max-w-[1040px] mx-auto px-4 md:px-6 pt-5 md:pt-6">
             <div class="rounded-3xl overflow-hidden shadow-card border border-wix-teal/15">
-                <img src="img/chi-siamo/hero.webp" alt="Vista esterna e insegna dell'Ambulatorio Veterinario Misantone in Viale Bovio a Teramo" width="980" height="416" class="w-full h-auto block">
+                <img src="img/chi-siamo/hero.webp" alt="Vista esterna e insegna dell'Ambulatorio Veterinario Misantone in Viale Bovio a Teramo" width="980" height="416" fetchpriority="high" class="w-full h-auto block">
             </div>
         </div>
 
@@ -121,7 +120,7 @@
                         <span class="text-[10px] font-semibold uppercase tracking-[0.16em] text-wix-teal/75 mb-4">01 · Fondatore</span>
                         <div class="w-[225px]">
                             <div class="rounded-t-2xl overflow-hidden">
-                                <img src="img/chi-siamo/pasquale.webp" alt="Dott. Pasquale Misantone" width="225" height="243" class="w-[225px] h-[243px] object-cover block">
+                                <img src="img/chi-siamo/pasquale.webp" alt="Dott. Pasquale Misantone" width="225" height="243" loading="lazy" decoding="async" class="w-[225px] h-[243px] object-cover block">
                             </div>
                             <div class="bg-wix-teal h-[44px] rounded-b-2xl flex items-center justify-center text-center -mt-[21px] relative z-10 shadow-sm">
                                 <h2 class="font-heading text-[21px] leading-[1.3em] text-wix-sage whitespace-nowrap">Pasquale Misantone</h2>
@@ -143,7 +142,7 @@
                         <span class="text-[10px] font-semibold uppercase tracking-[0.16em] text-wix-teal/75 mb-4">02 · Medico veterinario</span>
                         <div class="w-[224px]">
                             <div class="rounded-t-2xl overflow-hidden">
-                                <img src="img/chi-siamo/gabriele.webp" alt="Dott. Gabriele Misantone" width="224" height="222" class="w-[224px] h-[222px] object-cover block">
+                                <img src="img/chi-siamo/gabriele.webp" alt="Dott. Gabriele Misantone" width="224" height="222" loading="lazy" decoding="async" class="w-[224px] h-[222px] object-cover block">
                             </div>
                             <div class="bg-wix-teal h-[44px] rounded-b-2xl flex items-center justify-center text-center shadow-sm">
                                 <h2 class="font-heading text-[21px] leading-[1.3em] text-wix-sage whitespace-nowrap">Gabriele Misantone</h2>
@@ -186,6 +185,6 @@
         </div>
     </footer>
 
-    <script src="nav.js"></script>
+    <script src="nav.js" defer></script>
 </body>
 </html>

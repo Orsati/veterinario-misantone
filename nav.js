@@ -123,6 +123,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const lbClose = document.getElementById('lb-close');
         let idx = 0, timerChiusura, touchStartX = null;
 
+        const precarica = i => {
+            const url = items[(i + items.length) % items.length]?.dataset.lightboxSrc;
+            if (url) { const im = new Image(); im.decoding = 'async'; im.src = url; }
+        };
         const mostra = i => {
             idx = (i + items.length) % items.length;
             const el = items[idx];
@@ -130,6 +134,8 @@ document.addEventListener('DOMContentLoaded', () => {
             lbImg.alt = el.dataset.lightboxAlt || '';
             lbCaption.textContent = el.dataset.lightboxAlt || '';
             lbCounter.textContent = `${String(idx + 1).padStart(2, '0')} / ${String(items.length).padStart(2, '0')}`;
+            precarica(idx + 1);
+            precarica(idx - 1);
         };
         const apriLb = i => {
             clearTimeout(timerChiusura);
