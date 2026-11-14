@@ -209,14 +209,15 @@ function prova(avviso, casi) {
 }
 
 prova({ testo: '', fino: '', chiusiDal: '' }, [
-    ['2026-04-13',  8*60,    false, 'Chiuso · apriamo alle 09:00'],              // lunedì prima dell'apertura mattina
-    ['2026-04-13',  9*60,    true,  'Aperto ora · fino alle 12:30'],             // lunedì apertura mattina
-    ['2026-04-13', 12*60+30, false, 'Chiuso · riapriamo alle 16:00'],            // lunedì pausa pranzo
-    ['2026-04-13', 16*60,    true,  'Aperto ora · fino alle 19:30'],             // lunedì apertura pomeriggio
-    ['2026-04-13', 19*60+30, false, 'Chiuso · riapriamo domani alle 09:00'],     // lunedì dopo chiusura
-    ['2026-04-17', 20*60,    false, 'Chiuso · riapriamo lunedì alle 09:00'],     // venerdì sera -> lunedì
-    ['2026-04-18', 11*60,    false, 'Chiuso · riapriamo lunedì alle 09:00'],     // sabato -> lunedì
-    ['2026-04-19', 11*60,    false, 'Chiuso · riapriamo domani alle 09:00'],     // domenica -> lunedì (domani)
+    ['2026-04-13',  8*60,    false, 'Chiuso · apriamo alle 09:00'],                                  // lunedì prima dell'apertura mattina
+    ['2026-04-13',  9*60,    true,  'Aperto ora · fino alle 12:30'],                                 // lunedì apertura mattina
+    ['2026-04-13', 12*60+30, false, 'Chiuso · riapriamo alle 16:00'],                                // lunedì pausa pranzo
+    ['2026-04-13', 16*60,    true,  'Aperto ora · fino alle 19:30'],                                 // lunedì apertura pomeriggio
+    ['2026-04-13', 19*60+30, false, 'Chiuso · riapriamo domani alle 09:00'],                         // lunedì dopo chiusura
+    ['2026-04-17', 20*60,    false, 'Chiuso · riapriamo lunedì alle 09:00'],                         // venerdì sera -> lunedì
+    ['2026-04-18', 11*60,    false, 'Sabato mattina su appuntamento · urgenze 328 053 3005'],        // sabato mattina su appuntamento
+    ['2026-04-18', 17*60,    false, 'Solo urgenze (328 053 3005) · riapriamo lunedì alle 09:00'],    // sabato pomeriggio -> solo urgenze
+    ['2026-04-19', 11*60,    false, 'Solo urgenze (328 053 3005) · riapriamo domani alle 09:00'],    // domenica -> solo urgenze
 ]);
 
 prova({ testo: 'Ferie', chiusiDal: '2026-08-10', fino: '2026-08-20' }, [

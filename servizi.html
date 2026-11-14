@@ -19,11 +19,61 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
     <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#4D8495">
     <link rel="preload" href="fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/poppins-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/poppins-bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/stile.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Serve prenotare un appuntamento per la visita?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sì, è preferibile chiamare lo 0861 241533 o il 328 3666840 per fissare un orario, così da ridurre l'attesa per il tuo animale. Il sabato mattina si riceve solo su appuntamento."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Cosa fare in caso di urgenza veterinaria?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Per emergenze cliniche, anche il sabato pomeriggio e la domenica, è attivo il numero dedicato 328 053 3005."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Curate solo cani e gatti o anche altri piccoli animali?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "L'ambulatorio assiste cani, gatti e roditori da compagnia come conigli, cavie e criceti."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Come preparare l'animale per esami del sangue, ecografia o chirurgia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Per prelievi ematochimici, ecografia addominale e interventi in anestesia è generalmente richiesto un digiuno alimentare di 8–12 ore lasciando acqua fresca disponibile, salvo diversa indicazione del veterinario."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "È comodo raggiungere l'ambulatorio e parcheggiare?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "L'ambulatorio si trova in Viale Giovanni Bovio 175 a Teramo, una zona facilmente raggiungibile in auto con possibilità di sosta lungo il viale."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body class="bg-white text-wix-dark font-sans antialiased selection:bg-wix-teal selection:text-white">
     <a href="#contenuto" class="skip-link">Salta al contenuto</a>
@@ -114,15 +164,19 @@
 
             <!-- Contenuto Servizi (Griglia 3 + 2 in Card 2026) -->
             <section class="order-1 md:order-2 max-w-[1060px] mx-auto pt-8 md:pt-12 pb-12 md:pb-16 px-4 md:px-6 bg-white">
-                <h1 class="font-heading text-[30px] md:text-[36px] leading-[1.3em] text-wix-teal text-center mb-4">Ci prendiamo cura del tuo animale</h1>
-                <p class="max-w-[780px] mx-auto text-[15px] md:text-[16px] leading-[1.6em] text-wix-dark text-center mb-10 md:mb-12">
-                    L'ambulatorio veterinario Misantone è una clinica che si occupa di animali domestici: cani, gatti, roditori. Offre numerosi servizi che, accompagnati da esperienza e formazione continua, garantiscono qualità nell'assistenza del tuo amico a quattro zampe.
-                </p>
+                <div class="text-center mb-10 md:mb-12">
+                    <span class="text-[11px] font-semibold uppercase tracking-[0.14em] text-wix-teal/80">Prestazioni veterinarie · Teramo</span>
+                    <h1 class="font-heading text-[32px] md:text-[38px] font-bold leading-[1.2] tracking-[-0.02em] text-wix-teal mt-1 mb-4">Ci prendiamo cura del tuo animale</h1>
+                    <p class="max-w-[780px] mx-auto text-[15px] md:text-[16px] leading-[1.6em] text-wix-dark">
+                        L'ambulatorio veterinario Misantone è una clinica che si occupa di animali domestici: cani, gatti, roditori. Offre numerosi servizi che, accompagnati da esperienza e formazione continua, garantiscono qualità nell'assistenza del tuo amico a quattro zampe.
+                    </p>
+                </div>
 
                 <!-- Riga 1: Visite, Esami, Chirurgia veterinaria -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-7">
                     <!-- Visite -->
                     <article class="bg-wix-sage/55 rounded-3xl p-7 border border-wix-teal/15 shadow-card hover:shadow-cardHover transition-all duration-300 flex flex-col items-center text-center">
+                        <span class="text-[10px] font-semibold uppercase tracking-[0.16em] text-wix-teal/75 mb-3">01 · Prevenzione</span>
                         <div class="w-16 h-16 rounded-2xl bg-white shadow-sm border border-wix-teal/15 flex items-center justify-center mb-4">
                             <svg viewBox="20 20 160 160" class="w-[42px] h-[42px]" aria-hidden="true">
                                 <g>
@@ -149,6 +203,7 @@
 
                     <!-- Esami -->
                     <article class="bg-wix-sage/55 rounded-3xl p-7 border border-wix-teal/15 shadow-card hover:shadow-cardHover transition-all duration-300 flex flex-col items-center text-center">
+                        <span class="text-[10px] font-semibold uppercase tracking-[0.16em] text-wix-teal/75 mb-3">02 · Diagnostica</span>
                         <div class="w-16 h-16 rounded-2xl bg-white shadow-sm border border-wix-teal/15 flex items-center justify-center mb-4">
                             <svg viewBox="20 20 160 160" class="w-[42px] h-[42px]" aria-hidden="true">
                                 <g>
@@ -170,6 +225,7 @@
 
                     <!-- Chirurgia veterinaria -->
                     <article class="bg-wix-sage/55 rounded-3xl p-7 border border-wix-teal/15 shadow-card hover:shadow-cardHover transition-all duration-300 flex flex-col items-center text-center">
+                        <span class="text-[10px] font-semibold uppercase tracking-[0.16em] text-wix-teal/75 mb-3">03 · Specialistica</span>
                         <div class="w-16 h-16 rounded-2xl bg-white shadow-sm border border-wix-teal/15 flex items-center justify-center mb-4">
                             <svg viewBox="36 20 128 160" class="w-[34px] h-[42px]" aria-hidden="true">
                                 <g>
@@ -201,6 +257,7 @@
                 <div class="mt-6 md:mt-7 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-7 max-w-[700px] mx-auto">
                     <!-- Day Hospital -->
                     <article class="bg-wix-sage/55 rounded-3xl p-7 border border-wix-teal/15 shadow-card hover:shadow-cardHover transition-all duration-300 flex flex-col items-center text-center">
+                        <span class="text-[10px] font-semibold uppercase tracking-[0.16em] text-wix-teal/75 mb-3">04 · Assistenza diurna</span>
                         <div class="w-16 h-16 rounded-2xl bg-white shadow-sm border border-wix-teal/15 flex items-center justify-center mb-4">
                             <svg viewBox="20 35 160 130" class="w-[42px] h-[34px]" aria-hidden="true">
                                 <g>
@@ -217,6 +274,7 @@
 
                     <!-- Laboratorio all'avanguardia -->
                     <article class="bg-wix-sage/55 rounded-3xl p-7 border border-wix-teal/15 shadow-card hover:shadow-cardHover transition-all duration-300 flex flex-col items-center text-center">
+                        <span class="text-[10px] font-semibold uppercase tracking-[0.16em] text-wix-teal/75 mb-3">05 · Referti in sede</span>
                         <div class="w-16 h-16 rounded-2xl bg-white shadow-sm border border-wix-teal/15 flex items-center justify-center mb-4">
                             <svg viewBox="20 20 160 160" class="w-[42px] h-[42px]" aria-hidden="true">
                                 <g>
@@ -234,11 +292,74 @@
                     </article>
                 </div>
             </section>
+
+            <!-- Prima della visita + FAQ -->
+            <section class="order-3 w-full bg-wix-sage py-12 md:py-16 px-4 md:px-6 border-t border-wix-teal/10">
+                <div class="max-w-[920px] mx-auto">
+                    <div class="text-center mb-8">
+                        <span class="text-[11px] font-semibold uppercase tracking-[0.14em] text-wix-teal/80">Informazioni pratiche</span>
+                        <h2 class="font-heading text-[26px] md:text-[32px] font-bold text-wix-teal mt-1">Prima della visita &amp; domande frequenti</h2>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
+                        <div class="rounded-2xl bg-white border border-wix-teal/15 p-5 shadow-sm">
+                            <p class="text-[11px] font-semibold uppercase tracking-[0.12em] text-wix-teal mb-1">Esami &amp; chirurgia</p>
+                            <p class="text-sm text-wix-dark leading-relaxed">Per prelievi, ecografie addominali o interventi è richiesto un digiuno alimentare di 8–12 ore (acqua fresca consentita).</p>
+                        </div>
+                        <div class="rounded-2xl bg-white border border-wix-teal/15 p-5 shadow-sm">
+                            <p class="text-[11px] font-semibold uppercase tracking-[0.12em] text-wix-teal mb-1">Libretto sanitario</p>
+                            <p class="text-sm text-wix-dark leading-relaxed">Porta sempre il libretto delle vaccinazioni e gli eventuali referti o terapie recenti eseguite altrove.</p>
+                        </div>
+                        <div class="rounded-2xl bg-white border border-wix-teal/15 p-5 shadow-sm">
+                            <p class="text-[11px] font-semibold uppercase tracking-[0.12em] text-wix-teal mb-1">Trasporto sereno</p>
+                            <p class="text-sm text-wix-dark leading-relaxed">Usa il guinzaglio per i cani e un trasportino rigido e coperto da un telo per gatti e piccoli roditori.</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3">
+                        <details class="faq-item rounded-2xl bg-white border border-wix-teal/15 shadow-sm px-5 py-4">
+                            <summary class="flex items-center justify-between gap-4 cursor-pointer font-heading font-bold text-[16px] text-wix-dark select-none">
+                                <span>Serve prenotare un appuntamento per la visita?</span>
+                                <span class="faq-chevron text-wix-teal transition-transform duration-200 shrink-0">▾</span>
+                            </summary>
+                            <p class="mt-3 text-sm text-wix-gray leading-relaxed">Sì, è preferibile chiamare lo <a href="tel:+390861241533" class="text-wix-teal font-semibold hover:underline">0861 241533</a> o il <a href="tel:+393283666840" class="text-wix-teal font-semibold hover:underline">328 3666840</a> per fissare un orario ed evitare inutili attese al tuo animale. Il sabato mattina si riceve solo su appuntamento.</p>
+                        </details>
+                        <details class="faq-item rounded-2xl bg-white border border-wix-teal/15 shadow-sm px-5 py-4">
+                            <summary class="flex items-center justify-between gap-4 cursor-pointer font-heading font-bold text-[16px] text-wix-dark select-none">
+                                <span>Cosa fare in caso di urgenza veterinaria?</span>
+                                <span class="faq-chevron text-wix-teal transition-transform duration-200 shrink-0">▾</span>
+                            </summary>
+                            <p class="mt-3 text-sm text-wix-gray leading-relaxed">Per urgenze cliniche, compreso il sabato pomeriggio e la domenica, è attivo il numero dedicato <a href="tel:+393280533005" class="text-wix-teal font-bold hover:underline">328 053 3005</a>.</p>
+                        </details>
+                        <details class="faq-item rounded-2xl bg-white border border-wix-teal/15 shadow-sm px-5 py-4">
+                            <summary class="flex items-center justify-between gap-4 cursor-pointer font-heading font-bold text-[16px] text-wix-dark select-none">
+                                <span>Curate solo cani e gatti o anche altri piccoli animali?</span>
+                                <span class="faq-chevron text-wix-teal transition-transform duration-200 shrink-0">▾</span>
+                            </summary>
+                            <p class="mt-3 text-sm text-wix-gray leading-relaxed">L’ambulatorio assiste regolarmente cani, gatti e piccoli roditori da compagnia (come conigli e cavie).</p>
+                        </details>
+                        <details class="faq-item rounded-2xl bg-white border border-wix-teal/15 shadow-sm px-5 py-4">
+                            <summary class="flex items-center justify-between gap-4 cursor-pointer font-heading font-bold text-[16px] text-wix-dark select-none">
+                                <span>Come preparare l’animale per esami, ecografia o chirurgia?</span>
+                                <span class="faq-chevron text-wix-teal transition-transform duration-200 shrink-0">▾</span>
+                            </summary>
+                            <p class="mt-3 text-sm text-wix-gray leading-relaxed">Per prelievi ematochimici, ecografia addominale e chirurgia è indicato un digiuno alimentare di 8–12 ore lasciando acqua fresca disponibile, salvo diverse istruzioni al momento della prenotazione.</p>
+                        </details>
+                        <details class="faq-item rounded-2xl bg-white border border-wix-teal/15 shadow-sm px-5 py-4">
+                            <summary class="flex items-center justify-between gap-4 cursor-pointer font-heading font-bold text-[16px] text-wix-dark select-none">
+                                <span>È comodo raggiungere l’ambulatorio e parcheggiare?</span>
+                                <span class="faq-chevron text-wix-teal transition-transform duration-200 shrink-0">▾</span>
+                            </summary>
+                            <p class="mt-3 text-sm text-wix-gray leading-relaxed">La clinica si trova su Viale Giovanni Bovio 175 a Teramo, una strada ampia e comoda con possibilità di sosta nelle immediate vicinanze.</p>
+                        </details>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
 
     <footer class="bg-wix-tealAlt text-wix-sage border-t border-white/15">
-        <div class="max-w-[1040px] mx-auto px-6 md:px-10 py-8 flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
+        <div class="max-w-[1040px] mx-auto px-6 md:px-10 pt-9 pb-24 md:py-10 flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
             <div class="order-2 md:order-1 text-center md:text-left">
                 <p class="font-extralight text-[15px] leading-[1.5em] text-wix-sage">© 2026 Ambulatorio Veterinario Misantone · <a href="privacy.html" class="underline underline-offset-4 hover:text-white transition-colors">Privacy</a></p>
                 <p class="font-extralight text-[10px] leading-[1.4em] text-wix-sage/80 mt-0.5 mb-4">Logo image by sentavio on Freepik</p>

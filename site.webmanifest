@@ -1,0 +1,22 @@
+{
+  "name": "Ambulatorio Veterinario Misantone",
+  "short_name": "Vet Misantone",
+  "description": "Clinica veterinaria a Teramo dal 1992 in Viale Giovanni Bovio 175.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#4D8495",
+  "lang": "it",
+  "icons": [
+    {
+      "src": "/img/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

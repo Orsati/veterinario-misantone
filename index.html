@@ -19,6 +19,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
     <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#4D8495">
     <link rel="preload" href="fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/poppins-regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -31,8 +33,13 @@
       "name": "Ambulatorio Veterinario Misantone",
       "url": "https://veterinariomisantone.it/",
       "image": "https://veterinariomisantone.it/img/og.jpg",
+      "hasMap": "https://maps.google.com/?q=Ambulatorio+Veterinario+Misantone+Viale+Giovanni+Bovio+175+Teramo",
       "telephone": "+390861241533",
       "email": "pasqualemisantone@gmail.com",
+      "areaServed": {
+        "@type": "City",
+        "name": "Teramo"
+      },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Viale Giovanni Bovio, 175",
@@ -141,17 +148,17 @@
     </dialog>
 
     <main id="contenuto">
-        <!-- Striscia superiore a 3 foto con cornice moderna 2026 -->
+        <!-- Striscia superiore a 3 foto con cornice editoriale 2026 -->
         <section aria-label="Immagini dell'ambulatorio" class="max-w-[1380px] mx-auto px-4 md:px-6 pt-5">
             <div class="flex flex-col md:flex-row gap-3 md:gap-4 w-full">
-                <div class="hidden md:block md:w-[25.92%] overflow-hidden rounded-2xl shadow-card group">
-                    <img src="img/home/strip-1.webp" alt="Insegna esterna dell'Ambulatorio Veterinario Misantone" width="508" height="500" class="w-full h-full object-cover block transition-transform duration-500 group-hover:scale-105">
+                <div class="hidden md:block md:w-[25.92%] overflow-hidden rounded-2xl border border-wix-teal/10 shadow-card group">
+                    <img src="img/home/strip-1.webp" alt="Insegna esterna dell'Ambulatorio Veterinario Misantone" width="508" height="500" class="w-full h-full object-cover block transition-transform duration-700 ease-out group-hover:scale-[1.03]">
                 </div>
-                <div class="w-full md:w-[47.04%] overflow-hidden rounded-2xl shadow-card group">
-                    <img src="img/home/strip-2.webp" alt="Il Dott. Gabriele Misantone e il Dott. Pasquale Misantone in ambulatorio" width="922" height="500" fetchpriority="high" class="w-full h-full object-cover block transition-transform duration-500 group-hover:scale-105">
+                <div class="w-full md:w-[47.04%] overflow-hidden rounded-2xl border border-wix-teal/10 shadow-card group">
+                    <img src="img/home/strip-2.webp" alt="Il Dott. Gabriele Misantone e il Dott. Pasquale Misantone in ambulatorio" width="922" height="500" fetchpriority="high" class="w-full h-full object-cover block transition-transform duration-700 ease-out group-hover:scale-[1.03]">
                 </div>
-                <div class="hidden md:block md:w-[27.04%] overflow-hidden rounded-2xl shadow-card group">
-                    <img src="img/home/strip-3.webp" alt="Sala d'attesa dell'Ambulatorio Veterinario Misantone" width="530" height="500" class="w-full h-full object-cover block transition-transform duration-500 group-hover:scale-105">
+                <div class="hidden md:block md:w-[27.04%] overflow-hidden rounded-2xl border border-wix-teal/10 shadow-card group">
+                    <img src="img/home/strip-3.webp" alt="Sala d'attesa dell'Ambulatorio Veterinario Misantone" width="530" height="500" class="w-full h-full object-cover block transition-transform duration-700 ease-out group-hover:scale-[1.03]">
                 </div>
             </div>
         </section>
@@ -159,16 +166,17 @@
         <!-- Sezione Centrale: Titolo + 3 Card Bento (Chi siamo? / Orari di apertura / I nostri servizi) -->
         <section class="max-w-[1160px] mx-auto pt-10 md:pt-14 pb-12 md:pb-16 px-4 md:px-6">
             <div class="text-center mb-10 md:mb-12">
-                <span class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-wix-sage border border-wix-teal/20 text-wix-teal text-xs font-semibold uppercase tracking-wider mb-3">
-                    Dal 1992 al servizio dei vostri animali
+                <span class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-wix-sage border border-wix-teal/20 text-wix-teal text-[11px] font-semibold uppercase tracking-[0.14em] mb-3">
+                    Dal 1992 · Cura e medicina veterinaria
                 </span>
-                <h1 class="font-heading text-[30px] md:text-[38px] font-bold leading-[1.25] text-wix-teal">Clinica veterinaria a Teramo</h1>
-                <p class="font-heading text-[16px] leading-[1.4em] text-wix-teal/90 mt-1">viale Giovanni Bovio, 175</p>
+                <h1 class="font-heading text-[32px] md:text-[42px] font-bold leading-[1.18] tracking-[-0.02em] text-wix-teal">Clinica veterinaria a Teramo</h1>
+                <p class="font-heading text-[16px] leading-[1.4em] text-wix-teal/85 mt-1.5">Viale Giovanni Bovio, 175</p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-7 items-stretch">
                 <!-- Colonna 1: Chi siamo? -->
                 <article class="lg:col-span-4 bg-wix-sage/55 rounded-3xl p-7 md:p-8 border border-wix-teal/15 shadow-card hover:shadow-cardHover transition-all duration-300 flex flex-col items-center">
+                    <span class="text-[10px] font-semibold uppercase tracking-[0.16em] text-wix-teal/75 mb-4">01 · La struttura</span>
                     <div class="w-16 h-16 rounded-2xl bg-white shadow-sm border border-wix-teal/15 flex items-center justify-center mb-5">
                         <svg viewBox="20 27.6 160 144.8" class="w-[42px] h-[38px] fill-wix-teal" aria-hidden="true">
                             <path d="M124.2 82.8c-4.9-5.8-14.3-5.9-20.1 0L99.9 87l-4.2-4.2c-5.8-5.9-15.2-5.8-20.1 0-5.6 6.6-5.2 16.4 1 22.5l19.3 19.3c1.1 1.1 2.6 1.7 4 1.7s2.9-.6 4-1.7l19.3-19.3c6.2-6 6.6-15.9 1-22.5zm-3.2 20.1l-19.3 19.3c-.9.9-2.4.9-3.3 0L79 102.9c-5-4.9-5.3-12.8-.8-18.1 2.2-2.6 5.4-4 8.5-4 3 0 6 1.2 8.2 3.5l5 5 5-5c4.5-4.6 12.1-4.5 16.7.5 4.5 5.3 4.2 13.2-.7 18.1z"/>
@@ -188,6 +196,7 @@
 
                 <!-- Colonna 2: Orari di apertura -->
                 <article class="lg:col-span-4 bg-white rounded-3xl p-6 md:p-8 border-2 border-wix-teal/25 shadow-card hover:shadow-cardHover transition-all duration-300 flex flex-col items-center">
+                    <span class="text-[10px] font-semibold uppercase tracking-[0.16em] text-wix-teal/75 mb-3">02 · Orari &amp; urgenze</span>
                     <div class="w-16 h-16 rounded-2xl bg-wix-sage border border-wix-teal/15 flex items-center justify-center mb-4">
                         <svg viewBox="20 20 160 160" class="w-[42px] h-[42px] fill-wix-teal" aria-hidden="true">
                             <path d="M100 20c-44.1 0-80 35.9-80 80s35.9 80 80 80 80-35.9 80-80-35.9-80-80-80zm0 156c-41.9 0-76-34.1-76-76s34.1-76 76-76 76 34.1 76 76-34.1 76-76 76z"/>
@@ -197,9 +206,8 @@
                     <h2 class="font-heading text-[22px] font-bold leading-[1.3em] text-wix-teal text-center">Orari di apertura</h2>
 
                     <!-- Stato Orari Live (aggiornato da nav.js) -->
-                    <div id="avviso-orari" hidden class="mt-2 px-3 py-1 rounded-lg bg-wix-yellow text-wix-urgentText text-xs font-semibold text-center"></div>
-                    <div class="mt-2 mb-3 inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-wix-sage border border-wix-teal/15 text-xs font-medium text-wix-dark">
-                        <span id="stato-pallino" class="w-2 h-2 rounded-full bg-stone-400"></span>
+                    <div class="mt-2.5 mb-3 inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-wix-sage border border-wix-teal/15 text-xs font-medium text-wix-dark text-center">
+                        <span id="stato-pallino" class="w-2 h-2 rounded-full bg-stone-400 shrink-0"></span>
                         <span id="stato-orari">Lun–Ven 09:00–12:30 · 16:00–19:30</span>
                     </div>
 
@@ -207,7 +215,7 @@
                         È preferibile in ogni caso chiamare per<br>prenotare un appuntamento:
                     </p>
                     <p class="font-bold text-[14px] leading-[1.5em] text-wix-teal text-center mt-0.5 mb-3">
-                        <a href="tel:+390861241533" class="hover:underline">0861 241533</a> - <a href="tel:+393283666840" class="hover:underline">328 3666840</a>
+                        <a href="tel:+390861241533" class="hover:underline">0861 241533</a> · <a href="tel:+393283666840" class="hover:underline">328 3666840</a>
                     </p>
 
                     <div class="w-full rounded-xl overflow-x-auto border border-wix-teal/20 bg-white">
@@ -252,13 +260,15 @@
                         </table>
                     </div>
 
-                    <p class="mt-3.5 font-bold italic text-[11px] leading-[1.35em] text-wix-dark text-center">
-                        PER <span class="bg-wix-yellow text-wix-urgentText px-1.5 py-0.5 rounded not-italic">URGENZE</span> CHIAMARE <a href="tel:+393280533005" class="hover:underline text-wix-teal not-italic font-bold">328 053 3005</a>
-                    </p>
+                    <a href="tel:+393280533005" class="mt-4 w-full inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-xl bg-amber-50 hover:bg-amber-100 border border-amber-200/80 text-amber-950 text-xs font-bold transition-colors">
+                        <span class="bg-wix-yellow text-wix-urgentText px-1.5 py-0.5 rounded uppercase tracking-wide text-[10px]">Urgenze</span>
+                        <span>Chiama 328 053 3005</span>
+                    </a>
                 </article>
 
                 <!-- Colonna 3: I nostri servizi -->
                 <article class="lg:col-span-4 bg-wix-sage/55 rounded-3xl p-7 md:p-8 border border-wix-teal/15 shadow-card hover:shadow-cardHover transition-all duration-300 flex flex-col items-center">
+                    <span class="text-[10px] font-semibold uppercase tracking-[0.16em] text-wix-teal/75 mb-4">03 · Prestazioni</span>
                     <div class="w-16 h-16 rounded-2xl bg-white shadow-sm border border-wix-teal/15 flex items-center justify-center mb-5">
                         <svg viewBox="20 19.5 160 161" class="w-[42px] h-[42px] fill-wix-teal" aria-hidden="true">
                             <path d="M51 66c0 17.5 10.6 31.1 24.2 31.1S99.3 83.4 99.3 66 88.7 34.9 75.2 34.9 51 48.5 51 66zm44.4 0c0 15-8.9 26.8-20.2 26.8C63.8 92.8 55 81 55 66s8.9-26.8 20.2-26.8c11.3.1 20.2 11.8 20.2 26.8z"/>
@@ -286,30 +296,220 @@
             </div>
         </section>
 
-        <!-- Galleria Fotografica 5x3 (15 foto nell'ordine esatto Wix, con spaziatura e angoli arrotondati 2026) -->
-        <section aria-label="Galleria fotografica dell'ambulatorio e dei pazienti" class="w-full bg-wix-sage/60 py-10 md:py-14 px-4 md:px-6 border-t border-wix-teal/10">
-            <div class="max-w-[1380px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-3 md:gap-3.5">
-                <div class="overflow-hidden rounded-2xl shadow-sm group"><img src="img/galleria/foto-01.webp" alt="Gatto in degenza nell'ambulatorio veterinario" width="960" height="722" class="w-full aspect-[480/361] object-cover block transition-transform duration-500 group-hover:scale-105"></div>
-                <div class="overflow-hidden rounded-2xl shadow-sm group"><img src="img/galleria/foto-02.webp" alt="Lo staff medico dell'Ambulatorio Veterinario Misantone" width="960" height="722" class="w-full aspect-[480/361] object-cover block transition-transform duration-500 group-hover:scale-105"></div>
-                <div class="overflow-hidden rounded-2xl shadow-sm group"><img src="img/galleria/foto-03.webp" alt="Coniglio bianco e nero in visita veterinaria" width="960" height="722" class="w-full aspect-[480/361] object-cover block transition-transform duration-500 group-hover:scale-105"></div>
-                <div class="overflow-hidden rounded-2xl shadow-sm group"><img src="img/galleria/foto-04.webp" alt="Veterinario con un cucciolo di cane" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-500 group-hover:scale-105"></div>
-                <div class="overflow-hidden rounded-2xl shadow-sm group"><img src="img/galleria/foto-05.webp" alt="Attestati di formazione e aggiornamento professionale" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-500 group-hover:scale-105"></div>
-                <div class="overflow-hidden rounded-2xl shadow-sm group"><img src="img/galleria/foto-06.webp" alt="Cane sul tavolo da visita" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-500 group-hover:scale-105"></div>
-                <div class="overflow-hidden rounded-2xl shadow-sm group"><img src="img/galleria/foto-07.webp" alt="Intervento in sala operatoria veterinaria" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-500 group-hover:scale-105"></div>
-                <div class="overflow-hidden rounded-2xl shadow-sm group"><img src="img/galleria/foto-08.webp" alt="Postazione per le analisi di laboratorio" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-500 group-hover:scale-105"></div>
-                <div class="overflow-hidden rounded-2xl shadow-sm group"><img src="img/galleria/foto-09.webp" alt="Piccolo cucciolo di cane visitato in clinica" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-500 group-hover:scale-105"></div>
-                <div class="overflow-hidden rounded-2xl shadow-sm group"><img src="img/galleria/foto-10.webp" alt="Gattino con fasciatura post-operatoria" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-500 group-hover:scale-105"></div>
-                <div class="overflow-hidden rounded-2xl shadow-sm group"><img src="img/galleria/foto-11.webp" alt="I medici veterinari dell'ambulatorio" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-500 group-hover:scale-105"></div>
-                <div class="overflow-hidden rounded-2xl shadow-sm group"><img src="img/galleria/foto-12.webp" alt="Strumentazione per diagnostica ed esami ematochimici" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-500 group-hover:scale-105"></div>
-                <div class="overflow-hidden rounded-2xl shadow-sm group"><img src="img/galleria/foto-13.webp" alt="Refertazione radiografica digitale al computer" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-500 group-hover:scale-105"></div>
-                <div class="overflow-hidden rounded-2xl shadow-sm group"><img src="img/galleria/foto-14.webp" alt="Gatto rosso e bianco durante una visita di controllo" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-500 group-hover:scale-105"></div>
-                <div class="overflow-hidden rounded-2xl shadow-sm group"><img src="img/galleria/foto-15.webp" alt="Chirurgia veterinaria di precisione in sala operatoria" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-500 group-hover:scale-105"></div>
+        <!-- Galleria Fotografica 5x3 (15 foto nell'ordine esatto Wix, curata stile Cosmos + Lightbox) -->
+        <section aria-label="Galleria fotografica dell'ambulatorio e dei pazienti" class="w-full bg-wix-sage/60 py-12 md:py-16 px-4 md:px-6 border-t border-wix-teal/10">
+            <div class="max-w-[1380px] mx-auto">
+                <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2 mb-6 md:mb-8">
+                    <div>
+                        <span class="text-[11px] font-semibold uppercase tracking-[0.14em] text-wix-teal/80">Galleria · 15 scatti</span>
+                        <h2 class="font-heading text-[24px] md:text-[28px] font-bold text-wix-teal leading-tight mt-0.5">La clinica e i nostri pazienti</h2>
+                    </div>
+                    <p class="text-xs text-wix-gray">Tocca una foto per aprirla a schermo intero</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-3 md:gap-3.5">
+                    <button type="button" data-lightbox-src="img/galleria/foto-01.webp" data-lightbox-alt="Gatto in degenza nell'ambulatorio veterinario" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
+                        <img src="img/galleria/foto-01.webp" alt="Gatto in degenza nell'ambulatorio veterinario" width="960" height="722" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">01</span>
+                    </button>
+                    <button type="button" data-lightbox-src="img/galleria/foto-02.webp" data-lightbox-alt="Lo staff medico dell'Ambulatorio Veterinario Misantone" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
+                        <img src="img/galleria/foto-02.webp" alt="Lo staff medico dell'Ambulatorio Veterinario Misantone" width="960" height="722" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">02</span>
+                    </button>
+                    <button type="button" data-lightbox-src="img/galleria/foto-03.webp" data-lightbox-alt="Coniglio bianco e nero in visita veterinaria" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
+                        <img src="img/galleria/foto-03.webp" alt="Coniglio bianco e nero in visita veterinaria" width="960" height="722" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">03</span>
+                    </button>
+                    <button type="button" data-lightbox-src="img/galleria/foto-04.webp" data-lightbox-alt="Veterinario con un cucciolo di cane" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
+                        <img src="img/galleria/foto-04.webp" alt="Veterinario con un cucciolo di cane" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">04</span>
+                    </button>
+                    <button type="button" data-lightbox-src="img/galleria/foto-05.webp" data-lightbox-alt="Attestati di formazione e aggiornamento professionale" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
+                        <img src="img/galleria/foto-05.webp" alt="Attestati di formazione e aggiornamento professionale" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">05</span>
+                    </button>
+                    <button type="button" data-lightbox-src="img/galleria/foto-06.webp" data-lightbox-alt="Cane sul tavolo da visita" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
+                        <img src="img/galleria/foto-06.webp" alt="Cane sul tavolo da visita" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">06</span>
+                    </button>
+                    <button type="button" data-lightbox-src="img/galleria/foto-07.webp" data-lightbox-alt="Intervento in sala operatoria veterinaria" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
+                        <img src="img/galleria/foto-07.webp" alt="Intervento in sala operatoria veterinaria" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">07</span>
+                    </button>
+                    <button type="button" data-lightbox-src="img/galleria/foto-08.webp" data-lightbox-alt="Postazione per le analisi di laboratorio" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
+                        <img src="img/galleria/foto-08.webp" alt="Postazione per le analisi di laboratorio" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">08</span>
+                    </button>
+                    <button type="button" data-lightbox-src="img/galleria/foto-09.webp" data-lightbox-alt="Piccolo cucciolo di cane visitato in clinica" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
+                        <img src="img/galleria/foto-09.webp" alt="Piccolo cucciolo di cane visitato in clinica" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">09</span>
+                    </button>
+                    <button type="button" data-lightbox-src="img/galleria/foto-10.webp" data-lightbox-alt="Gattino con fasciatura post-operatoria" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
+                        <img src="img/galleria/foto-10.webp" alt="Gattino con fasciatura post-operatoria" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">10</span>
+                    </button>
+                    <button type="button" data-lightbox-src="img/galleria/foto-11.webp" data-lightbox-alt="I medici veterinari dell'ambulatorio" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
+                        <img src="img/galleria/foto-11.webp" alt="I medici veterinari dell'ambulatorio" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">11</span>
+                    </button>
+                    <button type="button" data-lightbox-src="img/galleria/foto-12.webp" data-lightbox-alt="Strumentazione per diagnostica ed esami ematochimici" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
+                        <img src="img/galleria/foto-12.webp" alt="Strumentazione per diagnostica ed esami ematochimici" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">12</span>
+                    </button>
+                    <button type="button" data-lightbox-src="img/galleria/foto-13.webp" data-lightbox-alt="Refertazione radiografica digitale al computer" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
+                        <img src="img/galleria/foto-13.webp" alt="Refertazione radiografica digitale al computer" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">13</span>
+                    </button>
+                    <button type="button" data-lightbox-src="img/galleria/foto-14.webp" data-lightbox-alt="Gatto rosso e bianco durante una visita di controllo" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
+                        <img src="img/galleria/foto-14.webp" alt="Gatto rosso e bianco durante una visita di controllo" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">14</span>
+                    </button>
+                    <button type="button" data-lightbox-src="img/galleria/foto-15.webp" data-lightbox-alt="Chirurgia veterinaria di precisione in sala operatoria" class="relative overflow-hidden rounded-2xl border border-wix-teal/10 shadow-sm hover:shadow-card group text-left cursor-zoom-in transition-shadow">
+                        <img src="img/galleria/foto-15.webp" alt="Chirurgia veterinaria di precisione in sala operatoria" width="960" height="722" loading="lazy" class="w-full aspect-[480/361] object-cover block transition-transform duration-700 ease-out group-hover:scale-105">
+                        <span class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-semibold tracking-wider text-wix-dark opacity-0 group-hover:opacity-100 transition-opacity">15</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mascotte interattiva: Barboncino Bianco da accarezzare -->
+        <section id="barboncino-section" aria-label="Mascotte interattiva della clinica" class="w-full bg-white py-12 md:py-16 px-4 md:px-6 border-t border-wix-teal/10">
+            <div class="max-w-[780px] mx-auto bg-wix-sage/55 rounded-3xl border border-wix-teal/15 shadow-card p-6 md:p-10 text-center">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-wix-teal/15 text-wix-teal text-[10px] font-semibold uppercase tracking-[0.14em]">
+                    Sala d’attesa virtuale · Mascotte
+                </span>
+                <h2 class="font-heading text-[24px] md:text-[28px] font-bold text-wix-teal mt-3">Accarezza il nostro barboncino bianco</h2>
+                <p class="text-[14px] md:text-[15px] text-wix-gray max-w-md mx-auto mt-1.5">Passa il dito sullo schermo o muovi il cursore sul suo musetto per fargli le coccole.</p>
+
+                <div id="barboncino-stage" tabindex="0" role="button" aria-label="Accarezza il barboncino bianco" class="relative mt-6 mx-auto max-w-[360px] h-[235px] rounded-2xl bg-gradient-to-b from-white to-wix-sage border border-wix-teal/15 shadow-sm flex items-center justify-center overflow-hidden select-none touch-none cursor-grab active:cursor-grabbing focus-visible:outline-none">
+                    <svg id="barboncino-svg" viewBox="0 0 280 220" class="w-[260px] h-[205px]" aria-hidden="true">
+                        <!-- Ombra sul pavimento -->
+                        <ellipse cx="140" cy="196" rx="68" ry="10" fill="#DCE5DD" opacity="0.75"/>
+
+                        <!-- Coda fluffy con pom-pom che scodinzola -->
+                        <g class="coda-riposo">
+                            <path d="M180 148 Q198 140 202 126" fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round"/>
+                            <path d="M180 148 Q198 140 202 126" fill="none" stroke="#CBD5CD" stroke-width="1.5" stroke-linecap="round"/>
+                            <circle cx="204" cy="123" r="13" fill="#FFFFFF" stroke="#CBD5CD" stroke-width="1.5"/>
+                            <circle cx="198" cy="117" r="7" fill="#FAF8F4"/>
+                            <circle cx="210" cy="122" r="7" fill="#FFFFFF"/>
+                        </g>
+
+                        <!-- Corpo morbido -->
+                        <g class="corpo-respiro">
+                            <!-- Corpo posteriore / fianchi -->
+                            <ellipse cx="164" cy="154" rx="28" ry="26" fill="#FAF8F4" stroke="#CBD5CD" stroke-width="1.6"/>
+                            <!-- Torace nuvola -->
+                            <path d="M107 148c0-21 15-35 33-35s33 14 33 35c0 17-12 31-33 31s-33-14-33-31z" fill="#FFFFFF" stroke="#CBD5CD" stroke-width="1.6"/>
+                            <circle cx="122" cy="134" r="14" fill="#FFFFFF"/>
+                            <circle cx="158" cy="134" r="14" fill="#FFFFFF"/>
+                            <circle cx="140" cy="129" r="16" fill="#FFFFFF"/>
+
+                            <!-- Zampa posteriore destra -->
+                            <ellipse cx="173" cy="179" rx="14" ry="9" fill="#FAF8F4" stroke="#CBD5CD" stroke-width="1.5"/>
+
+                            <!-- Zampe anteriori con pom-pom -->
+                            <rect x="115" y="148" width="16" height="36" rx="8" fill="#FFFFFF" stroke="#CBD5CD" stroke-width="1.5"/>
+                            <rect x="149" y="148" width="16" height="36" rx="8" fill="#FFFFFF" stroke="#CBD5CD" stroke-width="1.5"/>
+                            <!-- Pom-pom caviglie -->
+                            <circle cx="123" cy="175" r="10.5" fill="#FFFFFF" stroke="#CBD5CD" stroke-width="1.5"/>
+                            <circle cx="157" cy="175" r="10.5" fill="#FFFFFF" stroke="#CBD5CD" stroke-width="1.5"/>
+                            <!-- Piedini -->
+                            <ellipse cx="123" cy="189" rx="9" ry="5.5" fill="#FAF8F4" stroke="#CBD5CD" stroke-width="1.5"/>
+                            <ellipse cx="157" cy="189" rx="9" ry="5.5" fill="#FAF8F4" stroke="#CBD5CD" stroke-width="1.5"/>
+
+                            <!-- Collarino ambulatorio (Teal + medaglietta cuore) -->
+                            <path d="M118 117 Q140 126 162 117" fill="none" stroke="#4D8495" stroke-width="6.5" stroke-linecap="round"/>
+                            <circle cx="140" cy="126" r="5" fill="#FBBF24" stroke="#D97706" stroke-width="1.2"/>
+                        </g>
+
+                        <!-- Testa interattiva (segue leggermente la carezza) -->
+                        <g id="barboncino-testa" class="transition-transform duration-150 ease-out" style="transform-origin: 140px 88px;">
+                            <!-- Orecchie ricce sinistra e destra -->
+                            <g fill="#FAF8F4" stroke="#CBD5CD" stroke-width="1.6">
+                                <circle cx="98" cy="84" r="13"/>
+                                <circle cx="94" cy="99" r="13"/>
+                                <circle cx="97" cy="112" r="11"/>
+                                <circle cx="182" cy="84" r="13"/>
+                                <circle cx="186" cy="99" r="13"/>
+                                <circle cx="183" cy="112" r="11"/>
+                            </g>
+
+                            <!-- Ciuffo nuvola in cima alla testa -->
+                            <g fill="#FFFFFF" stroke="#CBD5CD" stroke-width="1.6">
+                                <circle cx="121" cy="48" r="15"/>
+                                <circle cx="159" cy="48" r="15"/>
+                                <circle cx="140" cy="41" r="17"/>
+                            </g>
+
+                            <!-- Viso -->
+                            <ellipse cx="140" cy="84" rx="34" ry="31" fill="#FFFFFF" stroke="#CBD5CD" stroke-width="1.6"/>
+                            <!-- Riempimento morbido tra ciuffo e viso -->
+                            <circle cx="124" cy="54" r="12" fill="#FFFFFF"/>
+                            <circle cx="156" cy="54" r="12" fill="#FFFFFF"/>
+                            <circle cx="140" cy="51" r="14" fill="#FFFFFF"/>
+
+                            <!-- Musetto sporgente -->
+                            <ellipse cx="140" cy="95" rx="18" ry="13" fill="#FAF8F4" stroke="#E2E8E2" stroke-width="1.2"/>
+
+                            <!-- Guance rosate -->
+                            <ellipse cx="114" cy="91" rx="6.5" ry="4" fill="#F9A8D4" opacity="0.55"/>
+                            <ellipse cx="166" cy="91" rx="6.5" ry="4" fill="#F9A8D4" opacity="0.55"/>
+
+                            <!-- Occhi a riposo -->
+                            <g id="occhi-riposo">
+                                <circle cx="124" cy="80" r="4.6" fill="#1E2923"/>
+                                <circle cx="125.5" cy="78.4" r="1.6" fill="#FFFFFF"/>
+                                <circle cx="156" cy="80" r="4.6" fill="#1E2923"/>
+                                <circle cx="157.5" cy="78.4" r="1.6" fill="#FFFFFF"/>
+                            </g>
+
+                            <!-- Occhi felici quando accarezzato -->
+                            <g id="occhi-felici" class="hidden" stroke="#1E2923" stroke-width="2.8" stroke-linecap="round" fill="none">
+                                <path d="M118 82 Q124 75 130 82"/>
+                                <path d="M150 82 Q156 75 162 82"/>
+                            </g>
+
+                            <!-- Nasino e sorriso -->
+                            <ellipse cx="140" cy="91" rx="5.5" ry="4" fill="#262D28"/>
+                            <ellipse cx="138.8" cy="89.8" rx="1.6" ry="0.9" fill="#FFFFFF" opacity="0.6"/>
+                            <path d="M140 95v3M133 98.5q3.5 3.5 7 0q3.5 3.5 7 0" fill="none" stroke="#262D28" stroke-width="1.8" stroke-linecap="round"/>
+
+                            <!-- Linguetta felice -->
+                            <path id="bocca-felice" class="hidden" d="M136.5 100.5 Q140 110 143.5 100.5 Z" fill="#F472B6" stroke="#DB2777" stroke-width="1"/>
+                        </g>
+                    </svg>
+                </div>
+
+                <p id="barboncino-stato" class="mt-4 text-sm font-medium text-wix-teal min-h-[20px]">Ti guarda scodinzolando...</p>
+                <div class="mt-3 flex flex-wrap items-center justify-center gap-2.5">
+                    <span id="barboncino-count" class="px-3.5 py-1.5 rounded-full bg-white border border-wix-teal/15 text-xs font-semibold text-wix-dark">Carezze: 0</span>
+                    <button type="button" id="barboncino-premio" class="px-4 py-1.5 rounded-full bg-wix-teal hover:bg-wix-tealDark text-white text-xs font-semibold shadow-sm transition-colors">
+                        Dai un premietto
+                    </button>
+                </div>
             </div>
         </section>
     </main>
 
+    <!-- Lightbox Galleria -->
+    <dialog id="lightbox" aria-label="Anteprima fotografia" class="m-auto p-0 bg-transparent max-w-4xl w-[94vw] text-white outline-none">
+        <div class="relative rounded-3xl overflow-hidden bg-wix-dark/95 border border-white/15 shadow-2xl">
+            <div class="flex items-center justify-between px-4 py-3 border-b border-white/10 text-xs">
+                <span id="lb-counter" class="font-semibold tracking-wider text-wix-sage/85">01 / 15</span>
+                <button type="button" id="lb-close" aria-label="Chiudi anteprima" class="px-3 py-1 rounded-full bg-white/10 hover:bg-white/20 text-white font-medium transition-colors">Chiudi ✕</button>
+            </div>
+            <div class="relative flex items-center justify-center bg-black/40 p-2 sm:p-4">
+                <button type="button" id="lb-prev" aria-label="Foto precedente" class="absolute left-2 sm:left-4 z-10 w-10 h-10 rounded-full bg-black/60 hover:bg-black/80 text-white flex items-center justify-center transition-colors">‹</button>
+                <img id="lb-img" src="img/galleria/foto-01.webp" alt="Anteprima foto galleria" width="960" height="722" class="max-h-[72vh] w-auto max-w-full rounded-xl object-contain">
+                <button type="button" id="lb-next" aria-label="Foto successiva" class="absolute right-2 sm:right-4 z-10 w-10 h-10 rounded-full bg-black/60 hover:bg-black/80 text-white flex items-center justify-center transition-colors">›</button>
+            </div>
+            <p id="lb-caption" class="px-5 py-3 text-center text-sm text-wix-sage"></p>
+        </div>
+    </dialog>
+
     <footer class="bg-wix-tealAlt text-wix-sage border-t border-white/15">
-        <div class="max-w-[1040px] mx-auto px-6 md:px-10 py-8 flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
+        <div class="max-w-[1040px] mx-auto px-6 md:px-10 pt-9 pb-24 md:py-10 flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
             <div class="order-2 md:order-1 text-center md:text-left">
                 <p class="font-extralight text-[15px] leading-[1.5em] text-wix-sage">© 2026 Ambulatorio Veterinario Misantone · <a href="privacy.html" class="underline underline-offset-4 hover:text-white transition-colors">Privacy</a></p>
                 <p class="font-extralight text-[10px] leading-[1.4em] text-wix-sage/80 mt-0.5 mb-4">Logo image by sentavio on Freepik</p>

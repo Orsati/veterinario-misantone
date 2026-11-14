@@ -62,7 +62,49 @@ html:has(dialog[open]) { overflow: hidden; }
     *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
 
-#mobile-menu { opacity: 0; transform: translateY(-.5rem); transition: opacity .2s ease, transform .2s ease; }
-#mobile-menu.aperto { opacity: 1; transform: none; }
-#mobile-menu::backdrop { background-color: rgb(9 20 5 / 0); transition: background-color .2s ease; }
-#mobile-menu.aperto::backdrop { background-color: rgb(9 20 5 / .35); }
+@keyframes menu-in {
+    from { transform: translateX(1rem); }
+    to { transform: none; }
+}
+#mobile-menu[open] { opacity: 1; transform: none; animation: menu-in .18s ease-out; }
+#mobile-menu.chiusura { opacity: 0; transform: translateX(1rem); transition: opacity .15s ease, transform .15s ease; }
+#mobile-menu::backdrop { background-color: rgb(9 20 5 / .35); transition: opacity .15s ease; }
+#mobile-menu.chiusura::backdrop { opacity: 0; }
+
+/* Lightbox galleria fotografica (stile Cosmos) */
+@keyframes dialog-in {
+    from { transform: scale(.97); }
+    to { transform: none; }
+}
+#lightbox[open] { opacity: 1; transform: none; animation: dialog-in .18s ease-out; }
+#lightbox.chiusura { opacity: 0; transform: scale(.98); transition: opacity .15s ease, transform .15s ease; }
+#lightbox::backdrop { background-color: rgb(9 20 5 / .8); backdrop-filter: blur(8px); transition: opacity .15s ease; }
+#lightbox.chiusura::backdrop { opacity: 0; }
+
+/* Animazioni micro-interattive per il barboncino bianco virtuale */
+@keyframes coda-scodinzola {
+    0%, 100% { transform: rotate(-7deg); }
+    50% { transform: rotate(15deg); }
+}
+@keyframes coda-felice {
+    0%, 100% { transform: rotate(-16deg); }
+    50% { transform: rotate(24deg); }
+}
+@keyframes cuore-vola {
+    0% { opacity: 0; transform: translate(-50%, 0) scale(.6); }
+    20% { opacity: 1; transform: translate(-50%, -10px) scale(1.05); }
+    100% { opacity: 0; transform: translate(-50%, -56px) scale(.85); }
+}
+@keyframes respiro-dolce {
+    0%, 100% { transform: translateY(0) scaleY(1); }
+    50% { transform: translateY(-1.5px) scaleY(1.012); }
+}
+.coda-riposo { transform-origin: 184px 146px; animation: coda-scodinzola 2.4s ease-in-out infinite; }
+.barboncino-felice .coda-riposo { animation: coda-felice .32s ease-in-out infinite; }
+.corpo-respiro { transform-origin: 140px 158px; animation: respiro-dolce 3.4s ease-in-out infinite; }
+.particella-cuore { position: absolute; pointer-events: none; animation: cuore-vola .95s cubic-bezier(.2, .8, .2, 1) forwards; }
+
+/* Fisarmonica FAQ nativa */
+details.faq-item > summary { list-style: none; }
+details.faq-item > summary::-webkit-details-marker { display: none; }
+details.faq-item[open] .faq-chevron { transform: rotate(180deg); }
